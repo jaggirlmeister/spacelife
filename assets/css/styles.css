@@ -110,11 +110,6 @@ body {
     border-radius: 50%;
     justify-content: center;
     display: flex;
-
-    transition: opacity .70s ease-in-out;
-    -moz-transition: opacity .70s ease-in-out;
-    -webkit-transition: opacity .70s ease-in-out;
-  /*transition: transform .5s ease;*/
 }
 
 #planet1{
@@ -123,10 +118,6 @@ body {
   width: 30%;
   height: 30%;
   position: relative;
-
-  transition: opacity .70s ease-in-out;
-  -moz-transition: opacity .70s ease-in-out;
-  -webkit-transition: opacity .70s ease-in-out;
 }
 
 #planet2{
@@ -135,10 +126,6 @@ body {
   width: 30%;
   height: 30%;
   position: relative;
-
-  transition: opacity .70s ease-in-out;
-  -moz-transition: opacity .70s ease-in-out;
-  -webkit-transition: opacity .70s ease-in-out;
 }
 
 #planet3{
@@ -147,7 +134,9 @@ body {
   width: 30%;
   height: 30%;
   position: relative;
+}
 
+.transitionEf{
   transition: opacity .70s ease-in-out;
   -moz-transition: opacity .70s ease-in-out;
   -webkit-transition: opacity .70s ease-in-out;
@@ -190,9 +179,9 @@ body {
 }
 
 #sigma{
-  width: 9em;
-  height: 9em;
-  top: 8%;
+  width: 6em;
+  height: 6em;
+  top: 0%;
 }
 
 .infoContainer{
@@ -223,13 +212,36 @@ body {
 
 /*Charts*/
 
-#myChart{
-  width: 270px !important;
-  height: 140px !important;
+#saiphChart{
+  width: 295px !important;
+  height: 154px !important;
 }
 
-.chartContainer{
+#apolloChart{
+  width: 273px !important;
+  height: 142px !important;
+}
+
+#sigmaChart{
+  width: 300px !important;
+  height: 160px !important;
+}
+
+.saiphChartContainer{
   display: flex;
   justify-content: left;
-  padding-top: 26%;
+  padding-top: 23%;
+  padding-left: 0%;
+}
+
+.apolloChartContainer{
+  display: flex;
+  justify-content: center;
+  padding-top: 25%;
+  padding-left: 5%;
+}
+
+.sigmaChartContainer{
+  padding-top: 20%;
+  padding-left: 0%;
 }

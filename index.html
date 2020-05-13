@@ -17,41 +17,51 @@
     <div class='space'>
     </div>
 
-    <div id='planet1' class="hide" onclick="clicked(1)">
-        <div id="info1" class="infoContainer infoSaiph hide">
-            <p class="topicTitle">Economy</p>
-            <p class="topicText">Saiph is the most wealthy space colony with a net worth of $155 billion.</p>
+    <div id='planet1' class="hide transitionEf" onclick="clicked(1)">
+        <div id="info1" class="infoContainer infoSaiph transitionEf hide">
+            <p class="topicTitle">Economy moves us</p>
+            <p class="topicText">Saiph is the first space colony in History. It was founded in November 2020 and to this day it is the most wealthy colony with a net worth of $155 billion.</p>
         </div>
 
-        <div class='chartContainer hide'>
-            <canvas id="myChart"></canvas>
+        <div id='chart1' class='chartContainer saiphChartContainer transitionEf hide'>
+            <canvas id="saiphChart"></canvas>
         </div>
         
-        <div class="planet" id="saiph">
+        <div class="planet transitionEf" id="saiph">
             <div>
                 Saiph
             </div>
         </div>
     </div>
 
-    <div id='planet2' class="hide" onclick="clicked(2)">
-        <div id="info2" class="infoContainer infoApollo hide">
-            <p class="topicTitle">Recreation</p>
-            <p class="topicText">Apollo is the most visited space colony with more than 10,000 visits per week.</p>
+    <div id='planet2' class="hide transitionEf" onclick="clicked(2)">
+        <div id="info2" class="infoContainer infoApollo transitionEf hide">
+            <p class="topicTitle">Recreation for all</p>
+            <p class="topicText">Apollo was founded in February 2026 and is the most visited space colony with more than 10,000 visits per week.</p>
         </div>
-        <div class="planet" id="apollo">
+
+        <div id='chart2' class='chartContainer apolloChartContainer transitionEf hide'>
+            <canvas id="apolloChart"></canvas>
+        </div>
+
+        <div class="planet transitionEf" id="apollo">
             <div>
                 Apollo
             </div>
         </div>
     </div>
 
-    <div id='planet3' class="hide" onclick="clicked(3)">
-        <div id="info3" class="infoContainer infoSigma hide">
-            <p class="topicTitle">Luxury</p>
-            <p class="topicText">Sigma is the fanciest space colony. It withholds the biggest treasury in history.</p>
+    <div id='planet3' class="hide transitionEf" onclick="clicked(3)">
+        <div id="info3" class="infoContainer infoSigma transitionEf hide">
+            <p class="topicTitle">Sigma is Luxury</p>
+            <p class="topicText">Founded in January 2024, Sigma is the fanciest space colony. It withholds the biggest treasury in history.</p>
         </div>
-        <div class="planet" id="sigma">
+
+        <div id='chart3' class='chartContainer sigmaChartContainer transitionEf hide'>
+            <canvas id="sigmaChart"></canvas>
+        </div>
+
+        <div class="planet transitionEf" id="sigma">
             <div>
                 Sigma
             </div>

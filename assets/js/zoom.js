@@ -53,13 +53,19 @@ var zoom = (function(){
 			$info2.classList.remove("show");
 			$info3.classList.remove("show");
 
-			$chart.classList.remove("show");
+			//$chart.classList.remove("show");
 
 			$info1.classList.add("hide");
 			$info2.classList.add("hide");
 			$info3.classList.add("hide");
 
-			$chart.classList.add("hide");
+			$chart1.classList.remove("show");
+			$chart2.classList.remove("show");
+			$chart3.classList.remove("show");
+
+			$chart1.classList.add("hide");
+			$chart2.classList.add("hide");
+			$chart3.classList.add("hide");
 		}
 	} );
 
