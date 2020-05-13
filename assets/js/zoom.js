@@ -5,6 +5,11 @@
  *
  * Copyright (C) 2011-2014 Hakim El Hattab, http://hakim.se
  */
+
+ //const $info1 = document.querySelector( '#info1' );
+ //const $info2 = document.querySelector( '#info2' );
+ //const $info3 = document.querySelector( '#info3' );
+
 var zoom = (function(){
 
 	var TRANSITION_DURATION = 800;
@@ -44,6 +49,17 @@ var zoom = (function(){
 	document.addEventListener( 'keyup', function( event ) {
 		if( level !== 1 && event.keyCode === 27 ) {
 			zoom.out();
+			$info1.classList.remove("show");
+			$info2.classList.remove("show");
+			$info3.classList.remove("show");
+
+			$chart.classList.remove("show");
+
+			$info1.classList.add("hide");
+			$info2.classList.add("hide");
+			$info3.classList.add("hide");
+
+			$chart.classList.add("hide");
 		}
 	} );
 
@@ -187,7 +203,7 @@ var zoom = (function(){
 			// Due to an implementation limitation we can't zoom in
 			// to another element without zooming out first
 			if( level !== 1 ) {
-				zoom.out();
+				//zoom.out();
 			}
 			else {
 				options.x = options.x || 0;

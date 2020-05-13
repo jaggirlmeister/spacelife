@@ -222,3 +222,14 @@ body {
 }
 
 /*Charts*/
+
+#myChart{
+  width: 270px !important;
+  height: 140px !important;
+}
+
+.chartContainer{
+  display: flex;
+  justify-content: left;
+  padding-top: 26%;
+}
