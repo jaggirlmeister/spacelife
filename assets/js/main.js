@@ -76,7 +76,7 @@ var myVar;
 var happen;
 
 function loadPlanets(){
-    myVar = setTimeout(helloPlanets, 4000);
+    myVar = setTimeout(helloPlanets, 6000);
 }
 
 function introText(){
