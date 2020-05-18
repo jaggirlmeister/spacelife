@@ -251,8 +251,6 @@ h1{
 #info1{
   position: absolute;
   left: 0%;
-  top: 0%;
-  width: 50%;
 }
 
 #saiph{
@@ -265,7 +263,7 @@ h1{
 
 #apollo{
   left: 0%;
-  top: 13%;
+  top: 0%;
   width: 8em;
   height: 8em;
 }
@@ -278,8 +276,8 @@ h1{
 
 .infoContainer{
   position: absolute;
-  top: 15%;
-  width: 25%;
+  top: 0%;
+  width: 50%;
   
   transition: opacity .70s ease-in-out;
   -moz-transition: opacity .70s ease-in-out;
@@ -312,11 +310,13 @@ h1{
 #apolloChart{
   width: 273px !important;
   height: 142px !important;
+  padding-left: 50%;
 }
 
 #sigmaChart{
   width: 300px !important;
   height: 160px !important;
+  padding-left: 50%;
 }
 
 .saiphChartContainer{
@@ -328,9 +328,9 @@ h1{
 
 .apolloChartContainer{
   display: flex;
-  justify-content: center;
-  padding-top: 25%;
-  padding-left: 5%;
+    justify-content: right;
+    padding-top: 25%;
+    /* padding-left: 5%; */
 }
 
 .sigmaChartContainer{
