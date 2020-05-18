@@ -61,7 +61,7 @@ body {
   top: 5%;
   margin-left: 5%;
   position: absolute;
-  width: 35%;
+  width: 50%;
 }
 
 #date {
@@ -205,14 +205,14 @@ h1{
 
 #planet1{
   left: 1%;
-  top: 43%;
+  top: 60%;
   width: 30%;
   height: 30%;
   position: relative;
 }
 
 #planet2{
-  top: -16%;
+  top: 0%;
   left: 43%;
   width: 30%;
   height: 30%;
@@ -220,8 +220,8 @@ h1{
 }
 
 #planet3{
-  top: -7%;
-  left: 61%;
+  top: 6%;
+  left: 67%;
   width: 30%;
   height: 30%;
   position: relative;
@@ -251,13 +251,14 @@ h1{
 #info1{
   position: absolute;
   left: 0%;
-  top: 10%;
+  top: 0%;
+  width: 50%;
 }
 
 #saiph{
   position: absolute;
   right: 0%;
-  top: 10%;
+  top: 0%;
   width: 7em;
   height: 7em;
 }
