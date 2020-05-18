@@ -10,13 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Exo|Rajdhani:500|Righteous|Roboto+Mono|Titillium+Web&display=swap" rel="stylesheet">
 </head>
 
-<body onload="loadPlanets()">
+<body onload="introText();">
 
-    <h1 class="ml3">_Space life after COVID-19</h1>
-    <p class="line-1 anim-typewriter">Nayla Arroyo Lizzio - Diseño Aplicado</p>
-
+    <h1 id="mainTitle" class="hide transitionEf">_Space life after COVID-19</h1>
+    <!--  <p class="hide">Nayla Arroyo Lizzio - Diseño Aplicado</p> -->
     <div class='space'>
     </div>
+    <div class="transitionEf" id="intro">
+        <p class="line anim-typewriter transitionEf" id="line1">In December 2019 planet Earth went through the worst pandemic in its History.</p>
+        <p class="line anim-typewriter2 transitionEf" id="line2">Many things changed during that time...</p> 
+        <p class="line anim-typewriter3 transitionEf" id="line3">Social distancing became human's lifestyle and their interest in space grew.</p> 
+        <p class="line anim-typewriter4 transitionEf" id="line4">Building space stations for recreation purposes did not seem so crazy for some..</p> 
+        <p class="line anim-typewriter5 transitionEf" id="line5">And after 11 years they made it happen..</p>
+    </div>
+
 
     <div id='planet1' class="hide transitionEf" onclick="clicked(1)">
         <div id="info1" class="infoContainer infoSaiph transitionEf hide">

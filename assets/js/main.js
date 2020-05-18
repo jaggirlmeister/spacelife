@@ -1,6 +1,8 @@
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+function wrap(){
+  var textWrapper = document.querySelector('.ml3');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
 
 anime.timeline({loop: false})
   .add({
@@ -10,6 +12,15 @@ anime.timeline({loop: false})
     //duration: 2250,
     delay: (el, i) => 150 * (i+1)
   });
+}
+/*Intro Text*/ 
+const $line1 = document.querySelector( '#line1' );
+const $line2 = document.querySelector( '#line2' );
+const $line3 = document.querySelector( '#line3' );
+const $line4 = document.querySelector( '#line4' );
+const $line5 = document.querySelector( '#line5' );
+
+const $title = document.querySelector( '#mainTitle' );
 
 /* Zoom */
 const $planet1 = document.querySelector( '#planet1' );
@@ -62,9 +73,14 @@ function clicked(num){
 }
 
 var myVar;
+var happen;
 
 function loadPlanets(){
-    myVar = setTimeout(helloPlanets, 10000);
+    myVar = setTimeout(helloPlanets, 4000);
+}
+
+function introText(){
+  happen = setTimeout(enfasis, 44000);
 }
 
 function helloPlanets(){
@@ -76,6 +92,24 @@ function helloPlanets(){
     $planet1.classList.remove("hide");
     $planet2.classList.remove("hide");
     $planet3.classList.remove("hide");
+}
+
+function enfasis(){
+  $line1.classList.add("hide");
+  $line2.classList.add("hide");
+  $line3.classList.add("hide");
+  $line4.classList.add("hide");
+  $line5.classList.add("hide");
+
+  theTitle();
+}
+
+function theTitle(){ 
+  $title.classList.add("ml3");
+  wrap();
+  $title.classList.remove("hide");
+  $title.classList.add("show");
+  loadPlanets();
 }
 
 /* Charts */
