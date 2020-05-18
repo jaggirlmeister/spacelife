@@ -2,7 +2,7 @@
 let actualDate;
 var d = new Date();
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-actualDate = `${d.getDate()} ${months[d.getMonth()]} 2030`;
+actualDate = `${months[d.getMonth()]} ${d.getDate()} 2030`;
 
 const $date = document.querySelector( '#date' );
 $date.innerHTML = actualDate;
