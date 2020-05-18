@@ -1,18 +1,28 @@
+//Get Date
+let actualDate;
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+actualDate = `${d.getDate()} ${months[d.getMonth()]} 2030`;
+
+const $date = document.querySelector( '#date' );
+$date.innerHTML = actualDate;
+
 // Wrap every letter in a span
 function wrap(){
   var textWrapper = document.querySelector('.ml3');
   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml3 .letter',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    //duration: 2250,
-    delay: (el, i) => 150 * (i+1)
-  });
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml3 .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      //duration: 2250,
+      delay: (el, i) => 150 * (i+1)
+    });
 }
+
 /*Intro Text*/ 
 const $line1 = document.querySelector( '#line1' );
 const $line2 = document.querySelector( '#line2' );
@@ -74,13 +84,20 @@ function clicked(num){
 
 var myVar;
 var happen;
+var loadDate;
 
-function loadPlanets(){
-    myVar = setTimeout(helloPlanets, 6000);
+function loadMap(){
+    loadDate = setTimeout(showDate, 5000);
+    myVar = setTimeout(helloPlanets, 10500);
 }
 
 function introText(){
   happen = setTimeout(enfasis, 44000);
+}
+
+function showDate(){
+  $date.classList.add("anim-typewriterTitle");
+  $date.classList.remove("hide");
 }
 
 function helloPlanets(){
@@ -109,7 +126,8 @@ function theTitle(){
   wrap();
   $title.classList.remove("hide");
   $title.classList.add("show");
-  loadPlanets();
+
+  loadMap();
 }
 
 /* Charts */
