@@ -192,6 +192,7 @@ h1{
 .planet{
     width: 10em;
     background-color: #8b008b7a;
+    border: 5px;
     color: white;
     font-family: 'Rajdhani', sans-serif;
     position: absolute;
@@ -201,6 +202,15 @@ h1{
     border-radius: 50%;
     justify-content: center;
     display: flex;
+    transition: opacity .70s ease-in-out;
+  -moz-transition: opacity .70s ease-in-out;
+  -webkit-transition: opacity .70s ease-in-out;
+  border: 5px solid #8b008b00;
+}
+
+.planet:hover{
+  /*background-color: #840084b8;*/
+  border: 5px solid #ac28ac91;
 }
 
 #planet1{
@@ -259,6 +269,7 @@ h1{
   top: 0%;
   width: 7em;
   height: 7em;
+  transition: .4s;
 }
 
 #apollo{
@@ -266,12 +277,14 @@ h1{
   top: 0%;
   width: 8em;
   height: 8em;
+  transition: .4s;
 }
 
 #sigma{
   width: 6em;
   height: 6em;
   top: 0%;
+  transition: .4s;
 }
 
 .infoContainer{
@@ -286,6 +299,7 @@ h1{
 
 .infoSigma{
   right: 0%;
+  padding-right: 3%;
 }
 
 .infoApollo{
@@ -314,15 +328,15 @@ h1{
 }
 
 #sigmaChart{
-  width: 300px !important;
-  height: 160px !important;
-  padding-left: 50%;
+  width: 280px !important;
+  height: 150px !important;
+  padding-left: 47%;
 }
 
 .saiphChartContainer{
   display: flex;
   justify-content: left;
-  padding-top: 23%;
+  padding-top: 25%;
   padding-left: 0%;
 }
 
@@ -334,6 +348,6 @@ h1{
 }
 
 .sigmaChartContainer{
-  padding-top: 20%;
+  padding-top: 23%;
   padding-left: 0%;
 }
